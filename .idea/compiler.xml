@@ -38,12 +38,20 @@
         <processorPath useClasspath="true" />
         <module name="dubbo-demo-consumer" />
       </profile>
+      <profile default="false" name="Annotation profile for myDemo" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="myDemo" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="dubbo-demo" target="1.5" />
       <module name="dubbo-demo-api" target="1.6" />
       <module name="dubbo-demo-consumer" target="1.6" />
       <module name="dubbo-demo-provider" target="1.6" />
+      <module name="myDemo" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>
